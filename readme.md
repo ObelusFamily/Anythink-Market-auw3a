@@ -10,4 +10,10 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+- Git clone this repo: `git clone https://github.com/ObelusFamily/Anythink-Market-auw3a.git`
+- Install Docker `brew install docker` on Mac or you can download from [the Docker website](https://docs.docker.com/get-docker/)
+- Follow install instructions
+- Check that install is complete by verifying that `docker -v` and `docker-compose -v` work
+- `cd` into the project directory
+- Run `docker-compose up`
+- pointing your browser to [http://localhost:3000/api/ping](http://localhost:3000/api/ping) should give you an encouraging message!
