@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const { faker } = require("@faker-js/faker");
 require("dotenv").config();
 const seeder = require("mongoose-seed");
+// why do I only need to import the user Schema and not the item? It is a mystery
 const userSchema = require("../models/User");
 const User = mongoose.model("User");
 
@@ -15,9 +16,9 @@ const getUser = async (username) => {
 const makeData = async () => {
   const data = [];
 
-  const user = await getUser("rotem");
+  const user = await getUser("rotem"); // change string to your local dev username
 
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 10; i++) {
     const title = faker.commerce.productName();
     const slug =
       title.split(" ").join("-").toLowerCase() +
