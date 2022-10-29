@@ -34,7 +34,6 @@ const makeData = async () => {
         faker.commerce.productMaterial(),
       ],
       seller: user._id,
-      image: "",
     };
 
     data.push(document);
